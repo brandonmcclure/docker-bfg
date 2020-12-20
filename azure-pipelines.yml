@@ -54,7 +54,7 @@ stages:
           inputs:
             containerRegistry: 'Docker Hub'
             command: 'login'
-        - template: 'Steps/Build-DockerImage.yml@templates'
+        - template: 'Steps/Build-DockerMultiArchImage.yml@templates'
           parameters: 
             appName: docker-bfg
             platforms: linux/amd64
