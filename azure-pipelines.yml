@@ -48,7 +48,7 @@ stages:
     - job: BuildAndPublishImage
       displayName: Build and publish image
       pool:
-        vmImage: 'ubunut-latest'
+        vmImage: 'ubuntu-latest'
       steps:
         - task: Docker@2
           inputs:
